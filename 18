@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+int cp,sp,pl;
+cout<<"Enter cost price: ";
+cin>>cp;
+cout<<"Enter selling price : ";
+cin>>sp;
+pl=sp-cp;
+if(pl>0)
+cout<<"Profit:"<<pl;
+else if(pl<0)
+cout<<"Loss:"<<-pl;
+else
+cout<<"No profit no loss";
+return 0;
+}
+ 
+ 
