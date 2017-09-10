@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int m[5], i;
+float s=0,p;
+cout<<"Enter marks obtained in 5 subjects :";
+for(i=0; i<5; i++)
+{
+cin>>m[i];
+s=s+m[i];
+}
+p=s/5;
+cout<<p<<"%"<<endl;
+cout<<"Grade:";
+if(p>90)
+{
+cout<<"A";
+}
+else if(p>80 && p<=90)
+{
+cout<<"B";
+}
+else if(p>70 && p<=80)
+{
+cout<<"C";
+}
+else if(p>60 && p<=70)
+{
+cout<<"D";
+}
+else if(p>40 && p<=60)
+{
+cout<<"E";
+}
+else
+{
+cout<<"F";
+}
+return 0;
+}
