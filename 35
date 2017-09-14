@@ -14,20 +14,4 @@ a=a+p;
 }
 cout<<a;
 return 0;
-}#include <iostream>
-#include <cmath>
-using namespace std;
-int main() 
-{
-int n,p,a=0;
-cout<<"Enter any number:";
-cin>>n;
-while(n!=0)
-{
-p=n%10;	
-n=n/10;
-a=a+p;
-}
-cout<<a;
-return 0;
 }
