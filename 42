@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+float a,b,n=1;
+cout<<"eEnter the number and the power to which it is to be raised:";
+cin>>a>>b;
+for(int i=1;i<=b;i++)
+n=n*a;
+cout<<m;
+return 0;
+}
