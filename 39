@@ -1,0 +1,46 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+char s[10];
+int m;
+cout<<"Enter the number:";
+cin>>s;
+int one=0,two=0,three=0,four=0,five=0,six=0,seven=0,eight=0,nine=0,zero=0;
+m=strlen(s);
+for(int i=0;s[i]!=s[m];i++)
+{
+if((s[i]-48)==1)
+one++;
+else if((s[i]-48)==2)
+two++;
+else if((s[i]-48)==3)
+three++;
+else if((s[i]-48)==4)
+four++;
+else if((s[i]-48)==5)
+five++;
+else if((s[i]-48)==6)
+six++;
+else if((s[i]-48)==7)
+seven++;
+else if((s[i]-48)==8)
+eight++;
+else if((s[i]-48)==9)
+nine++;
+else if((s[i]-48)==0)
+zero++;
+}
+cout<<"\nFrequency of 1 - "<<one;
+cout<<"\nFrequency of 2 - "<<two;
+cout<<"\nFrequency of 3 - "<<three;
+cout<<"\nFrequency of 4 - "<<four;
+cout<<"\nFrequency of 5 - "<<five;
+cout<<"\nFrequency of 6 - "<<six;
+cout<<"\nFrequency of 7 - "<<seven;
+cout<<"\nFrequency of 8 - "<<eight;
+cout<<"\nFrequency of 9 - "<<nine;
+cout<<"\nFrequency of 0 - "<<zero;
+return 0;
+}
