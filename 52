@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() 
+{
+int ip, j;
+double n, d, s;
+sum = 0;
+cout << "Enter a number: ";
+cin >> ip;
+for (int i = 1; i <= ip; i++) 
+{
+n = 0;
+s = 0;
+j = i;
+while (j != 0) 
+{
+n++;
+j = j/10;
+}
+j = i;
+while (j != 0) 
+{
+d = j % 10;
+s += pow(d,n);
+j = j/10;
+}
+if (s == i) 
+{
+cout << i << " ";
+}
+}
+cout << endl;
+return 0;
+}
