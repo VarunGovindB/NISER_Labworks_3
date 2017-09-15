@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+int n, i, d, f, sf;
+cout << "Enter a number: ";
+cin >> n;
+for (int l = 1; l <= n; l++) 
+{
+sf = 0;
+i = l;
+while (i != 0) 
+{
+f = 1;
+d = i % 10;
+i = i/10;
+for (int j = 1; j <= d; j++) 
+{
+f = f*j;
+}
+sf += f;
+}
+if (sf == l) 
+{
+cout << l << " ";
+}
+}
+cout << endl;
+return 0;
+}
