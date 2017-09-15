@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() 
+{
+int n, d, s;
+s = 0;
+cout << "Enter a number:";
+cin >> n;
+for (int i = 1; i <= n/2; i++) {
+if (input % i == 0) {
+d = i;
+s += d;
+}
+}
+if (s == n) 
+{
+cout << n << " is a perfect number.";
+}
+else 
+{
+cout << n << " is not a perfect number.";
+}
+cout << endl;
+return 0;
+}
